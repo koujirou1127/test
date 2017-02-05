@@ -1,0 +1,28 @@
+<!--ons-navigator var="mynavigator" ng-scope="app"-->
+<ons-navigator>
+   <!--<ons-page ng-controlleer="testAppController1">-->
+   <ons-page>
+  <!--script src="app/app.js"></script-->   
+        <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+            </div>
+            <div class="center">Page 1</div>
+        </ons-toolbar>
+        <div style="text-align: center">
+            <h1>Page 1</h1>
+      sample
+  <div class="test1" ng-controller="testAppController1 as app">
+    <h1>{{app.message}}</h1>
+    <button ng-click="app.hello('App1')">Click Me</button>
+  </div>
+  
+  <div class="test2" ng-controller="testAppController2 as app">
+    <h1>{{app.message}}</h1>
+    <button ng-click="app.hello('App2')">Click Me</button>
+  </div>
+
+  <a href="sample2.html">sample2</a>
+        </div>
+    </ons-page>
+</ons-navigator>
